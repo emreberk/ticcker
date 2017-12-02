@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF385E171FBF068900A01BC9 /* ticckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF385E161FBF068900A01BC9 /* ticckerTests.swift */; };
 		CF668ABE1FB5E23400291257 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF668ABD1FB5E23400291257 /* AppDelegate.swift */; };
 		CF668AC31FB5E23400291257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF668AC11FB5E23400291257 /* Main.storyboard */; };
 		CF668AC51FB5E23400291257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF668AC41FB5E23400291257 /* Assets.xcassets */; };
@@ -21,7 +22,20 @@
 		F2F86D0D6F992B227C129E40 /* Pods_ticcker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E69DC631BA0903C757AA2DB8 /* Pods_ticcker.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CF385E191FBF068900A01BC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF668AB21FB5E23400291257 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF668AB91FB5E23400291257;
+			remoteInfo = ticcker;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CF385E141FBF068900A01BC9 /* ticckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ticckerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF385E161FBF068900A01BC9 /* ticckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ticckerTests.swift; sourceTree = "<group>"; };
+		CF385E181FBF068900A01BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF668ABA1FB5E23400291257 /* ticcker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ticcker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF668ABD1FB5E23400291257 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF668AC21FB5E23400291257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +55,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CF385E111FBF068900A01BC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF668AB71FB5E23400291257 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,10 +82,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CF385E151FBF068900A01BC9 /* ticckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF385E161FBF068900A01BC9 /* ticckerTests.swift */,
+				CF385E181FBF068900A01BC9 /* Info.plist */,
+			);
+			path = ticckerTests;
+			sourceTree = "<group>";
+		};
 		CF668AB11FB5E23400291257 = {
 			isa = PBXGroup;
 			children = (
 				CF668ABC1FB5E23400291257 /* ticcker */,
+				CF385E151FBF068900A01BC9 /* ticckerTests */,
 				CF668ABB1FB5E23400291257 /* Products */,
 				BA16158D89BF540DDE202FD6 /* Pods */,
 				DFDE0EE3875F4381DE6A4E12 /* Frameworks */,
@@ -75,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				CF668ABA1FB5E23400291257 /* ticcker.app */,
+				CF385E141FBF068900A01BC9 /* ticckerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,19 +115,75 @@
 			isa = PBXGroup;
 			children = (
 				CF668ABD1FB5E23400291257 /* AppDelegate.swift */,
-				CF668ACF1FB5E51D00291257 /* Constants.swift */,
-				CF668AD11FB5E60500291257 /* Currency.swift */,
-				CF668AD31FB5E62200291257 /* CurrencyCell.swift */,
-				CF668AD51FB5E66E00291257 /* MainViewController.swift */,
-				CF668AD71FB5E68C00291257 /* MainViewModel.swift */,
-				CF668AD91FB5E6B500291257 /* DetailViewController.swift */,
-				CF668ADB1FB5E6D200291257 /* DetailViewModel.swift */,
-				CF668AC11FB5E23400291257 /* Main.storyboard */,
-				CF668AC41FB5E23400291257 /* Assets.xcassets */,
-				CF668AC61FB5E23400291257 /* LaunchScreen.storyboard */,
-				CF668AC91FB5E23400291257 /* Info.plist */,
+				CF7C67001FD2C6B000EECCD0 /* Library */,
+				CF7C66FF1FD2C6A400EECCD0 /* Cells */,
+				CF7C67011FD2C6BD00EECCD0 /* Model */,
+				CF7C66FD1FD2C66F00EECCD0 /* ViewControllers */,
+				CF7C66FE1FD2C68400EECCD0 /* ViewModels */,
+				CF7C67021FD2C6F100EECCD0 /* Storyboards */,
+				CF7C67031FD2C71200EECCD0 /* Supporting Files */,
 			);
 			path = ticcker;
+			sourceTree = "<group>";
+		};
+		CF7C66FD1FD2C66F00EECCD0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF668AD91FB5E6B500291257 /* DetailViewController.swift */,
+				CF668AD51FB5E66E00291257 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CF7C66FE1FD2C68400EECCD0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CF668ADB1FB5E6D200291257 /* DetailViewModel.swift */,
+				CF668AD71FB5E68C00291257 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CF7C66FF1FD2C6A400EECCD0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CF668AD31FB5E62200291257 /* CurrencyCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CF7C67001FD2C6B000EECCD0 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				CF668ACF1FB5E51D00291257 /* Constants.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		CF7C67011FD2C6BD00EECCD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF668AD11FB5E60500291257 /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF7C67021FD2C6F100EECCD0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CF668AC61FB5E23400291257 /* LaunchScreen.storyboard */,
+				CF668AC11FB5E23400291257 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CF7C67031FD2C71200EECCD0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF668AC41FB5E23400291257 /* Assets.xcassets */,
+				CF668AC91FB5E23400291257 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		DFDE0EE3875F4381DE6A4E12 /* Frameworks */ = {
@@ -109,6 +197,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CF385E131FBF068900A01BC9 /* ticckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF385E1D1FBF068900A01BC9 /* Build configuration list for PBXNativeTarget "ticckerTests" */;
+			buildPhases = (
+				CF385E101FBF068900A01BC9 /* Sources */,
+				CF385E111FBF068900A01BC9 /* Frameworks */,
+				CF385E121FBF068900A01BC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF385E1A1FBF068900A01BC9 /* PBXTargetDependency */,
+			);
+			name = ticckerTests;
+			productName = ticckerTests;
+			productReference = CF385E141FBF068900A01BC9 /* ticckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CF668AB91FB5E23400291257 /* ticcker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF668ACC1FB5E23400291257 /* Build configuration list for PBXNativeTarget "ticcker" */;
@@ -139,6 +245,11 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Emre Berk";
 				TargetAttributes = {
+					CF385E131FBF068900A01BC9 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF668AB91FB5E23400291257;
+					};
 					CF668AB91FB5E23400291257 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -159,11 +270,19 @@
 			projectRoot = "";
 			targets = (
 				CF668AB91FB5E23400291257 /* ticcker */,
+				CF385E131FBF068900A01BC9 /* ticckerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CF385E121FBF068900A01BC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF668AB81FB5E23400291257 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,6 +344,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CF385E101FBF068900A01BC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF385E171FBF068900A01BC9 /* ticckerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF668AB61FB5E23400291257 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +368,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF385E1A1FBF068900A01BC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF668AB91FB5E23400291257 /* ticcker */;
+			targetProxy = CF385E191FBF068900A01BC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CF668AC11FB5E23400291257 /* Main.storyboard */ = {
@@ -262,6 +397,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CF385E1B1FBF068900A01BC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ticckerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emreberk.ticckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ticcker.app/ticcker";
+			};
+			name = Debug;
+		};
+		CF385E1C1FBF068900A01BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ticckerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emreberk.ticckerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ticcker.app/ticcker";
+			};
+			name = Release;
+		};
 		CF668ACA1FB5E23400291257 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -375,7 +542,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ticcker/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "ticcker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emreberk.ticcker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,7 +558,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ticcker/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "ticcker/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emreberk.ticcker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -402,6 +571,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CF385E1D1FBF068900A01BC9 /* Build configuration list for PBXNativeTarget "ticckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF385E1B1FBF068900A01BC9 /* Debug */,
+				CF385E1C1FBF068900A01BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CF668AB51FB5E23400291257 /* Build configuration list for PBXProject "ticcker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

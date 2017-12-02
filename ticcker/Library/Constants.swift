@@ -12,7 +12,7 @@ import ChameleonFramework
 
 struct C{
     struct API{
-        static let URLString = "https://api.coinmarketcap.com/v1/ticker/?limit=10"
+        static let URLString = "https://api.coinmarketcap.com/v1/ticker/?limit=100"
     }
     struct Color{
         static let appBackground = UIColor.flatBlackDark
